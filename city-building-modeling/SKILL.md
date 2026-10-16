@@ -17,7 +17,8 @@ description: 本项目现代城市建筑与工业设施（发电厂、水厂、�
 - [`scripts/finish_part_v01.py`](scripts/finish_part_v01.py)：交审闸门（检查 episode 事件、证据、inspection；可选重建数据集）。原件原样拷贝，md5 `21fe2e625d5be0b554a00e331df95570`。
 - [`scripts/record_modeling_step.py`](scripts/record_modeling_step.py)：训练事件记录器（每事件一个 JSON + 证据哈希快照）。原件原样拷贝，md5 `f707ee535d94515942ee6135b68ae0c7`。
 - [`scripts/MD5SUMS.txt`](scripts/MD5SUMS.txt)：包内全部脚本 md5，`cd scripts && md5sum -c MD5SUMS.txt` 复核。
-- **包内缺失的外部脚本**：正文引用的 `scripts/gen_reference.ps1`、`scripts/gen_edit.ps1`（第 1、2 步出参考图）和 `tools/pipeline/log_feedback.py`（finish_part 提示用它逐字记录用户反馈）在本包和 /workspace 中都**找不到**，未随包提供，使用前需向 skill 管理员索取。
+- [`scripts/gen_reference.ps1`](scripts/gen_reference.ps1) / [`scripts/gen_edit.ps1`](scripts/gen_edit.ps1)：第 1、2 步出概念图与 6 格多视图。**只能在 Windows（PowerShell）上用**；密钥走用户本机 DPAPI 文件 + `tools/pipeline/image-provider.json`（`-Provider 02` 读 `image-provider-02.json`），**密钥没有入包**。原件只读拷自用户本机 `.agents/skills/reference-procedural-modeling/scripts/`。
+- [`scripts/log_feedback.py`](scripts/log_feedback.py)：逐字记录用户反馈为 `user_feedback` 事件。**依赖 `record_modeling_step.py`**（同目录 import `append_event`），两者一起放在工程 `tools/pipeline/` 下。原件只读拷自 `tools/pipeline/`。
 - [`references/building-generator-template.py`](references/building-generator-template.py)：小模型可直接复制填空的生成器脚手架模板。
 - [`references/power-plant-a09-example.py`](references/power-plant-a09-example.py)：燃气电厂完整生产级范例（15 个高细节部件 + 176×136 m 总装，1032 行完整实现）。
 - [`references/power-plant-lock-example.md`](references/power-plant-lock-example.md)：燃气电厂 `lock.md` 范例（A0 审视、结构读取、尺寸与总平面、材质真值表）。
