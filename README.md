@@ -3,7 +3,7 @@
 私人仓库，存放城建游戏团队的可复用 skill。
 
 ## 目录
-- `city-building-modeling/`：城市与工业建筑分件参数化建模（v2，含第二轮修改，见 CHANGELOG-2026-10-16.md）
+- `city-building-modeling/`：城市与工业建筑分件参数化建模（v2，十六项自查闸门；含第 15 项细节预算、第 16 项小件真实原型与安装逻辑，见 CHANGELOG-2026-10-16.md）
 - `character-modeling-skill-v01/`：人物/市民建模 skill（当前版，后续更新）
 - `workflows/`：通用 skill
   - `workflows/skill-1791962320249/`：**市民白模三视图门禁**，当角色/市民白模要对齐官方正侧三视图、做象形白模验收或用户说「不像三视图」时使用；骨架与材质过关前一律冻结。
