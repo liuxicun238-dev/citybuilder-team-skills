@@ -213,13 +213,13 @@
     },
     {
       "path": "references/validation.md",
-      "bytes": 1788,
-      "sha256": "d21c98c9ac29ab78776ab4d6856b904e72b0b1016750f765b4683a483effbb41"
+      "bytes": 2733,
+      "sha256": "bddc1491a33b46355ae46b36f2cd4e2a33e63b2d8058d39ac9b12be65655b438"
     },
     {
       "path": "references/workflow.md",
-      "bytes": 7458,
-      "sha256": "f7afda03d25bceb80b74870392231168dfb2b898028b18c4bf35969d61877bbf"
+      "bytes": 8060,
+      "sha256": "75380cedc70dc68eed5f14dc687967772c69715cfe96bc9d8dc2960e76a452f7"
     },
     {
       "path": "requirements.txt",
@@ -248,8 +248,18 @@
     },
     {
       "path": "SKILL.md",
-      "bytes": 3239,
-      "sha256": "5339bf9ffc5a241131244b3a54df231273fe3d43cfef5cd40834428821678d83"
+      "bytes": 4043,
+      "sha256": "0ff3c4bd4470693639b0ba803307f241c5b8bf9bd866cda7ed2e891095d348bc"
+    },
+    {
+      "path": "references/hands.md",
+      "bytes": 2650,
+      "sha256": "1ea14e5eeb7d90c2286edbe43734ef8862a20591b85ec9098eaacac05d5b808a"
+    },
+    {
+      "path": "CHANGELOG-v01-hands.md",
+      "bytes": 2594,
+      "sha256": "876230b337e1d0cab7ab2a825d4e7cfd8d700524db71c538c0583025c58cf139"
     }
   ]
 }
