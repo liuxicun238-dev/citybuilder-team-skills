@@ -1,0 +1,5 @@
+a64789050836daa68f43b82e34720bbc  scripts/building_kit_v01.py
+d2d4091eeebdbecf1ae8c56abde0bc4d  scripts/city_kit_common.py
+21fe2e625d5be0b554a00e331df95570  scripts/finish_part_v01.py
+f3e2201ee29d1d2c0ef74bad90105689  scripts/power_plant_kit_v01.py
+f707ee535d94515942ee6135b68ae0c7  scripts/record_modeling_step.py

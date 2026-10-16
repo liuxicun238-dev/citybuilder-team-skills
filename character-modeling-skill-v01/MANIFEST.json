@@ -1,0 +1,255 @@
+{
+  "package": "game-character-modeling-external-v01",
+  "files": [
+    {
+      "path": "EXTERNAL-AGENT-PROMPT.txt",
+      "bytes": 1046,
+      "sha256": "08501da694640917b1dbb5a7a550173157579e99f36ef33fac165c4febb295b2"
+    },
+    {
+      "path": "payload/.agents/skills/game-character-modeling/scripts/inspect_obj.py",
+      "bytes": 2741,
+      "sha256": "b8b80d00d17a54f98ae24cbbaeb3a3cfcaf63e114026c3f69921362b9e5aa771"
+    },
+    {
+      "path": "payload/.agents/skills/game-character-modeling/scripts/orient_obj.py",
+      "bytes": 2662,
+      "sha256": "c8c569a53e5f7ee000060397284126c4f84be2cc5a6735278e9d9454ec3f1c02"
+    },
+    {
+      "path": "payload/.agents/skills/game-character-modeling/scripts/render_views.py",
+      "bytes": 3299,
+      "sha256": "b13704fa5ff529f4d634ac1a592b85e98053b2cfc84613668d08bdf2ff609bd6"
+    },
+    {
+      "path": "payload/.agents/skills/game-ear-modeling/scripts/build-ear-example.py",
+      "bytes": 5481,
+      "sha256": "a8ab22a4374620c60ff63b1a91269d0b61f4f3c4c3f54c6b62664d27d1abcb88"
+    },
+    {
+      "path": "payload/.agents/skills/game-ear-modeling/scripts/refine-ear-example.py",
+      "bytes": 1445,
+      "sha256": "51122f00c0c12feae6218cf33612958121acddd3defd5e0fcb85030239add741"
+    },
+    {
+      "path": "payload/art/references/citizen-ear-clay-v01/reference.png",
+      "bytes": 1949357,
+      "sha256": "5c2bc3d5048dd955dd517ef34398a3e6db66e187ef999461573f1865be91450c"
+    },
+    {
+      "path": "payload/art/references/citizen-mouth-clay-v01/reference.png",
+      "bytes": 2177172,
+      "sha256": "3e44da4d28f3d240ee6074bd1499f0aeeb70c326e54087749ed3eaca635765a8"
+    },
+    {
+      "path": "payload/art/references/citizen-nose-clay-v01/reference.png",
+      "bytes": 2211821,
+      "sha256": "5ba8785b650bfdb7691ac1bea456d5d58ac63cf8ae8dfb92a8ba7727811f4a8c"
+    },
+    {
+      "path": "payload/art/references/citizens-clay-male-v01/front.png",
+      "bytes": 2016936,
+      "sha256": "faa8b4acfbd7d74aca5de71a9a67a553c81a3a17e629b5dac4be10010189c1fd"
+    },
+    {
+      "path": "payload/art/references/citizens-clay-male-v01/lock.md",
+      "bytes": 1598,
+      "sha256": "8cdbaf75302f66f574787145b468aa2de2ebcf6318afc7d06f4bdf7cbd1d70ce"
+    },
+    {
+      "path": "payload/art/references/citizens-clay-male-v01/oblique.png",
+      "bytes": 1960986,
+      "sha256": "87aa762aed1bb73c20981afa54d7b7a6ce5395698c651380b5a20efdba0c37f0"
+    },
+    {
+      "path": "payload/art/references/citizens-clay-male-v01/profile-candidate.png",
+      "bytes": 1916207,
+      "sha256": "ae3ed1ca3884f7823d01fef0c2584b18e29c1641bdc3803f60a15f2cbe0b00ab"
+    },
+    {
+      "path": "payload/tools/pipeline/assemble_head_ear_preview_v02.py",
+      "bytes": 2351,
+      "sha256": "f316406060f4cf51df7cc38768dedbf2e1306cf4109506602f5d590a33f62c53"
+    },
+    {
+      "path": "payload/tools/pipeline/build_citizen_arms_v03.py",
+      "bytes": 4715,
+      "sha256": "f4192aee9dcd636de158e5d7235566a70dd6805612e2a5200ab63e2b7c289949"
+    },
+    {
+      "path": "payload/tools/pipeline/build_citizen_hands_v04.py",
+      "bytes": 4918,
+      "sha256": "85e3d27572eca86f2016c3505dec1eaab9253bb747cc21bf78dd42907170c291"
+    },
+    {
+      "path": "payload/tools/pipeline/build_citizen_upper_body_v03.py",
+      "bytes": 3985,
+      "sha256": "3d17bd77d8522be933fc6922dbd4b37e250db24362f13d81665e802d1457fa31"
+    },
+    {
+      "path": "payload/tools/pipeline/build_mouth_surface_v03.py",
+      "bytes": 6239,
+      "sha256": "d9c4e86ff62b6cc826bf967520fa8501b80a54ab02ae082b6373c1dfabdfb349"
+    },
+    {
+      "path": "payload/tools/pipeline/build_nose_clay_v01.py",
+      "bytes": 3290,
+      "sha256": "9d032bbd93158d5923eaf915d973f3c767e0d559b3e2f278cf72fdddfaa20a82"
+    },
+    {
+      "path": "payload/tools/pipeline/build_upper_torso_complete_v03.py",
+      "bytes": 3883,
+      "sha256": "927bb803906daa6bc2232938c201a824f2ffb659a3f947b2bbeb6cccab4311ad"
+    },
+    {
+      "path": "payload/tools/pipeline/check_original_walk_v01.py",
+      "bytes": 1068,
+      "sha256": "2643e6df9eb695c6b32a5f0cba0b04a4d46f00972a8eba60f30c6b0779eb20f6"
+    },
+    {
+      "path": "payload/tools/pipeline/fair_chin_v03.py",
+      "bytes": 1495,
+      "sha256": "c32e49cc0c2dadba852cb498728f0a7b65801b8f43a5b41a8cc763be5bee425d"
+    },
+    {
+      "path": "payload/tools/pipeline/fair_citizen_body_details_v02.py",
+      "bytes": 1547,
+      "sha256": "e4986a7b6e43a933d440ef7bad5cb935efa9e54c11ee2871dee7b50d8414f20a"
+    },
+    {
+      "path": "payload/tools/pipeline/fair_nose_join_v10.py",
+      "bytes": 2164,
+      "sha256": "cf7c2daa0a842562da740df7fd7b148ab7326f88253b04a8478e4b26997f7fb0"
+    },
+    {
+      "path": "payload/tools/pipeline/fit_nose_transition_v12.py",
+      "bytes": 1902,
+      "sha256": "20828aca3ef3efd622a5d89b564975d235ec8a26e91f3df67c0dc579ae699d5d"
+    },
+    {
+      "path": "payload/tools/pipeline/head_constrained_triangles_v01.py",
+      "bytes": 690,
+      "sha256": "cad9f20dc47ec1263ab08ca096405b217270b388d2af5bbafbfba495add356fd"
+    },
+    {
+      "path": "payload/tools/pipeline/head_profile_cage_v01.py",
+      "bytes": 2620,
+      "sha256": "9f9942358201e8e548820dba7f8f895daacc080e61085ace2cae2fdf1246155a"
+    },
+    {
+      "path": "payload/tools/pipeline/join_nose_surface_v08.py",
+      "bytes": 5684,
+      "sha256": "c58d7f020cf1901c59ee7d9fdb1cf55a75f7960985b09f2834cf7e98c3c97fa4"
+    },
+    {
+      "path": "payload/tools/pipeline/record_modeling_step.py",
+      "bytes": 7473,
+      "sha256": "300512accce787286f68c626c6f70cb4624f985c415178afdc5c09819be48d24"
+    },
+    {
+      "path": "payload/tools/pipeline/refine_chin_v02.py",
+      "bytes": 2862,
+      "sha256": "cd140b0d3eead41adcb0ae905fcab8ae4d1b7339a4eade10ec07c9aae92ba11a"
+    },
+    {
+      "path": "payload/tools/pipeline/refine_citizen_body_details_v01.py",
+      "bytes": 5745,
+      "sha256": "82155226125bab3eca5bf46f2e3c5d269e4e062c3af6bd054f416becf3bbe592"
+    },
+    {
+      "path": "payload/tools/pipeline/reform_mouth_v06.py",
+      "bytes": 3968,
+      "sha256": "9c46f2ce0a07f39b068aac6dd9ffb67c5f99471fda01eed71d9f4968963476b0"
+    },
+    {
+      "path": "payload/tools/pipeline/repair_neck_preserve_face_v01.py",
+      "bytes": 6305,
+      "sha256": "24411505964fbf4639733f5749621c02bc9a4f1e17f0fada71729732a82a48e4"
+    },
+    {
+      "path": "payload/tools/pipeline/retriangulate_nose_collar_v09.py",
+      "bytes": 2323,
+      "sha256": "4042e579c0c38a9d52c2ef877ad0e3bd76acdf64254e4761f14ec1f945fcb140"
+    },
+    {
+      "path": "payload/tools/pipeline/rig_original_citizen_walk_v03.py",
+      "bytes": 7023,
+      "sha256": "7aa6ba395701e3de19bba8bd4372efda76a6c08af1f2e55d1b2812fbba2f0c26"
+    },
+    {
+      "path": "payload/tools/pipeline/sculpt_upper_body_v05.py",
+      "bytes": 2885,
+      "sha256": "8701537c5b8588eebd6ada36f8d9602a875f7fe930aea0ca7e6d6838b912b8ec"
+    },
+    {
+      "path": "payload/tools/pipeline/shape_nose_root_v13.py",
+      "bytes": 2651,
+      "sha256": "1c77ad88af4f721e1dd5d9e07ffcf94c7a69d90730f3c81a30c6eacf11e78a37"
+    },
+    {
+      "path": "payload/tools/pipeline/zbrush_reference_head_v18.py",
+      "bytes": 14166,
+      "sha256": "e5e03cc3e05699d618262663714418f411d110492ecf9719b54f844abf94e1b2"
+    },
+    {
+      "path": "references/ear-workflow.md",
+      "bytes": 1152,
+      "sha256": "a90d52ca56d042afcdee50023d26594d9490f46a00ba6c6db757b13b01455b23"
+    },
+    {
+      "path": "references/head-neck.md",
+      "bytes": 994,
+      "sha256": "6117dfdd6269fbe2586531b40ff8c9ba8b75b6c40caeb43c8203ad2013ee1527"
+    },
+    {
+      "path": "references/portable-test.json",
+      "bytes": 1809,
+      "sha256": "9c913d7ef21b45f2003dc02d9af01e2d751fbdf4203a59c0c0dcc30c9ccf7de4"
+    },
+    {
+      "path": "references/recipe.md",
+      "bytes": 4354,
+      "sha256": "56e988a6c25607062dc65dc725eda6790fe83550e5a3ccd4d3808f4bea6e60c4"
+    },
+    {
+      "path": "references/validation.md",
+      "bytes": 1788,
+      "sha256": "d21c98c9ac29ab78776ab4d6856b904e72b0b1016750f765b4683a483effbb41"
+    },
+    {
+      "path": "references/workflow.md",
+      "bytes": 7458,
+      "sha256": "f7afda03d25bceb80b74870392231168dfb2b898028b18c4bf35969d61877bbf"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 71,
+      "sha256": "ee67c0a68ed8c232c257c7636cb32cd50030d6eb166736b3cb724e235f0c4a30"
+    },
+    {
+      "path": "scripts/classify_boundaries.py",
+      "bytes": 1505,
+      "sha256": "5c0f9e2d98917a9e46e0e9e4903dbd83979fe57e2057da0b5473e2e07c4a72ac"
+    },
+    {
+      "path": "scripts/package_and_audit.py",
+      "bytes": 3071,
+      "sha256": "3af8a3014ea407619cff147f9f8d39bda5d06f4f9c073766b33b44db89062046"
+    },
+    {
+      "path": "scripts/run_recipe.py",
+      "bytes": 8941,
+      "sha256": "a2e19b9df291d0294a0666c64337264c893253c6ddeedcbbd8769c9cdf89a2af"
+    },
+    {
+      "path": "scripts/verify_package.py",
+      "bytes": 694,
+      "sha256": "705408d2f51602145056f1d10107d9c88d6163961dd11a50c72d14e1e8fc958d"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 3239,
+      "sha256": "5339bf9ffc5a241131244b3a54df231273fe3d43cfef5cd40834428821678d83"
+    }
+  ]
+}

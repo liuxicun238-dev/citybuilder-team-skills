@@ -1,0 +1,4 @@
+interface:
+  display_name: "城市与工业建筑分件高细节建模"
+  short_description: "按A0审视、6格多视图拆件、声明式构件原语库与三级细节清单，用Blender程序化生成高细节建筑群与总装"
+  default_prompt: "使用 $city-building-modeling 流程与内置 scripts/building_kit_v01.py 构件库，分部件高细节建模并完成场地总装与八项防坑自查。"
