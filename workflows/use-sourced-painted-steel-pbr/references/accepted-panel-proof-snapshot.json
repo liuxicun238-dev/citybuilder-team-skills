@@ -1,0 +1,86 @@
+{
+  "scope": "Historical panel-proof evidence only; not a reusable full-door assembly or approval of hardware, frame, repeated UVs, or later changes.",
+  "source_artifacts": {
+    "config": "materials/real_source_candidate/source_proof_config.json",
+    "assembly": "materials/real_source_candidate/scripts/assemble_source_proof.py",
+    "inspection": "materials/real_source_candidate/SOURCE_INSPECTION.json"
+  },
+  "sha256": {
+    "assemble_source_proof.py": "a5b45abf208aec1a22162839628d87422a427b48e4680f5dddf4cd4281924251",
+    "source_proof_config.json": "df492c79e8df09877a6e8f3d34f3481a8d698904b809dc47e5e0843df7314a53",
+    "SOURCE_INSPECTION.json": "4d502f30b051bd237e3b469060833cf720e2b951bbfb7c85b52115fabe3f6ce7"
+  },
+  "config": {
+    "source_asset": "blue_metal_plate",
+    "source_url": "https://polyhaven.com/a/blue_metal_plate",
+    "source_crop_pixels": [
+      1280,
+      0,
+      3120,
+      4096
+    ],
+    "source_tile_m": 2.5,
+    "source_crop_m": [
+      1.123046875,
+      2.5
+    ],
+    "leaf_m": [
+      1.192,
+      2.584
+    ],
+    "scale_change": [
+      1.0613982608695651,
+      1.0336
+    ],
+    "BaseColor": "original unchanged sRGB",
+    "Roughness": "original unchanged Non-Color",
+    "Normal": "original unchanged OpenGL Non-Color, strength1",
+    "Metallic": "original ARM B is exactly0; extracted zero grayscale image",
+    "displacement": "none",
+    "synthetic_weathering": "none",
+    "limitations": [
+      "Both leaves use the same source crop for this bounded material proof; unique variation not claimed",
+      "First proof is the original darker blue source, without color retint"
+    ]
+  },
+  "source_map_inspection": {
+    "Diffuse": {
+      "sha256": "cd7dfc69866c6b67af3e1fe8a17b700fdf24954cebd9fa46d52877ae8af05d64",
+      "source_size": [
+        4096,
+        4096
+      ],
+      "png_bit_depth": 16
+    },
+    "Rough": {
+      "sha256": "ccbe9b62664b7e3e4ef2caf3499f59a6dfe8459643f1ceb68661421414fc80df",
+      "source_size": [
+        4096,
+        4096
+      ],
+      "png_bit_depth": 16
+    },
+    "nor_gl": {
+      "sha256": "fa0e94e8632abc57c098a27f18bcf93dd2018f78b94d88465f0ae9b42761a475",
+      "source_size": [
+        4096,
+        4096
+      ],
+      "png_bit_depth": 16
+    }
+  },
+  "assembly_excerpts": [
+    {
+      "purpose": "Image channels and color spaces; all image pixels stay in the original files",
+      "source": " for i,(channel,cs,socket) in enumerate([('BaseColor','sRGB','Base Color'),('Roughness','Non-Color','Roughness'),('Metallic','Non-Color','Metallic'),('NormalGL','Non-Color',None)]):\n  im=bpy.data.images.load(str(T/f'{prefix}_{channel}_{suffix}.png'),check_existing=True);im.colorspace_settings.name=cs\n  tex=nd.new('ShaderNodeTexImage');tex.image=im;tex.name=channel;tex.label=channel+' / '+cs;tex.location=(-450,350-i*220);tex.interpolation='Linear';tex.extension='EXTEND' if prefix.startswith('DoorLeaf') else 'REPEAT'\n  if socket:lk.new(tex.outputs['Color'],p.inputs[socket])\n  else:\n   n=nd.new('ShaderNodeNormalMap');n.location=(0,-220);n.inputs['Strength'].default_value=1;n.space='TANGENT';lk.new(tex.outputs['Color'],n.inputs['Color']);lk.new(n.outputs['Normal'],p.inputs['Normal'])\n"
+    },
+    {
+      "purpose": "Exact panel crop mapping; historical proof repeats the crop on both leaves",
+      "source": " if o.name in ['LEAF_L_Panel_2mm','LEAF_R_Panel_2mm']:\n  uv=o.data.uv_layers.active\n  for item in uv.data:\n   u,v=item.uv;local_u=(u-.02)/.46 if u<.5 else (u-.52)/.46\n   item.uv=(.3125+local_u*(1840/4096),(v-.02)/.96)\n  o['uv_contract']='source_blue_plate_center_crop_1280_0_3120_4096; same crop across all image channels'\n"
+    },
+    {
+      "purpose": "Original ARM channel readback and source-only declaration",
+      "source": "# Keep the authored source normal and data images unchanged. Verify actual ARM blue channel.\nimport numpy as np\narm=bpy.data.images.load(str(P/'source/Original_ARM_4K.png'),check_existing=False);arm.colorspace_settings.name='Non-Color';pixels=np.empty(len(arm.pixels),np.float32);arm.pixels.foreach_get(pixels);blue=pixels[2::4]\nreport['original_arm_metallic_range']=[float(blue.min()),float(blue.max())]\nif float(blue.max())!=0:raise RuntimeError('Expected zero source metalness; revisit channel extraction')\nbpy.data.images.remove(arm);del pixels,blue\nreport['source_crop_pixels']=[1280,0,3120,4096];report['source_tile_m']=2.5;report['crop_to_leaf_scale']=[1.192/(1840/4096*2.5),2.584/2.5]\nreport['source_only_proof']='Original BaseColor/Roughness/Normal unchanged; Metallic extracted from original zero ARM B; no synthetic weathering or displacement'\n"
+    }
+  ]
+}
