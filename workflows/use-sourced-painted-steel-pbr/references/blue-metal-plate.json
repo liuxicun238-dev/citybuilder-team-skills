@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "asset": "blue_metal_plate",
+  "creator": "Rob Tuytel",
+  "provider": "Poly Haven",
+  "asset_url": "https://polyhaven.com/a/blue_metal_plate",
+  "license": {
+    "name": "CC0",
+    "url": "https://polyhaven.com/license",
+    "status": "Recorded from the official source during the approved material proof; recheck at acquisition"
+  },
+  "files_api_url": "https://api.polyhaven.com/files/blue_metal_plate",
+  "source_size_px": [
+    4096,
+    4096
+  ],
+  "source_tile_m": [
+    2.5,
+    2.5
+  ],
+  "crop_pixels_xyxy": [
+    1280,
+    0,
+    3120,
+    4096
+  ],
+  "crop_origin": "top-left; right and bottom exclusive",
+  "mapped_panel_m": [
+    1.192,
+    2.584
+  ],
+  "baseline": {
+    "retint": false,
+    "synthetic_weathering": false,
+    "added_displacement": false,
+    "normal_convention": "OpenGL tangent-space",
+    "normal_strength": 1.0,
+    "metallic": 0,
+    "arm_blue_range_observed": [
+      0,
+      0
+    ],
+    "arm_blue_validation": "Full-precision image readback recorded in the approved source proof; this verifier does not decode pixels"
+  },
+  "maps": [
+    {
+      "semantic": "BaseColor",
+      "filename": "Diffuse.png",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/4k/blue_metal_plate/blue_metal_plate_diff_4k.png",
+      "bytes": 88602011,
+      "md5": "421f040e458a44921704e3b726768cc6",
+      "sha256": "cd7dfc69866c6b67af3e1fe8a17b700fdf24954cebd9fa46d52877ae8af05d64",
+      "size_px": [
+        4096,
+        4096
+      ],
+      "png_bit_depth": 16,
+      "png_color_type": 6,
+      "color_space": "sRGB"
+    },
+    {
+      "semantic": "Roughness",
+      "filename": "Rough.png",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/4k/blue_metal_plate/blue_metal_plate_rough_4k.png",
+      "bytes": 26981835,
+      "md5": "f61f4de4ca0ef7341587259ed39e1c71",
+      "sha256": "ccbe9b62664b7e3e4ef2caf3499f59a6dfe8459643f1ceb68661421414fc80df",
+      "size_px": [
+        4096,
+        4096
+      ],
+      "png_bit_depth": 16,
+      "png_color_type": 0,
+      "color_space": "Non-Color"
+    },
+    {
+      "semantic": "Normal",
+      "filename": "nor_gl.png",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/4k/blue_metal_plate/blue_metal_plate_nor_gl_4k.png",
+      "bytes": 64974985,
+      "md5": "5af4a9f6cc10bfac9ddb6083a7c8b6fe",
+      "sha256": "fa0e94e8632abc57c098a27f18bcf93dd2018f78b94d88465f0ae9b42761a475",
+      "size_px": [
+        4096,
+        4096
+      ],
+      "png_bit_depth": 16,
+      "png_color_type": 2,
+      "color_space": "Non-Color"
+    },
+    {
+      "semantic": "ARM",
+      "filename": "arm.png",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/4k/blue_metal_plate/blue_metal_plate_arm_4k.png",
+      "bytes": 36864102,
+      "md5": "7d0f0667ec14adb7ebb79fc2443aa959",
+      "sha256": "845785e231b3f502ee1a1e9f0242285247b9b4fd44fa5e9c4838634a338f7e41",
+      "size_px": [
+        4096,
+        4096
+      ],
+      "png_bit_depth": 16,
+      "png_color_type": 2,
+      "color_space": "Non-Color"
+    }
+  ],
+  "gltf": {
+    "filename": "official_blue_metal_plate_4k.gltf",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/gltf/4k/blue_metal_plate/blue_metal_plate_4k.gltf",
+    "bytes": 2814,
+    "md5": "b57829f1fe605be59f412b97241a103d",
+    "sha256": "d1217b08cfb9f318c451841846ad1926dc8a473d0c228fc1058e934e293687af",
+    "material_name": "blue_metal_plate",
+    "metallic_factor": 0,
+    "note": "Official glTF uses JPEG image variants; this baseline uses the independently verified 16-bit PNG maps below"
+  }
+}
