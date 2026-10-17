@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sourced Painted-Steel PBR"
+  short_description: "Verified source maps for believable coated steel"
+  default_prompt: "Use $use-sourced-painted-steel-pbr to build a source-first painted-steel panel material and verify its scale, channels and actual rendered appearance."
